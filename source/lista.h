@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <assert.h>
 
 typedef struct Produto{
   int codigo;
@@ -29,9 +30,11 @@ typedef struct Lista{
   int tam;
 }Lista;
 
-void new_lista(Lista *l);{
-  l->inicio - l -> fim = new_celula();
+void new_lista(Lista *l){
+
+  l->inicio = l->fim = new_celula();
   l->tam = 0;
+
 }
 
 #endif
